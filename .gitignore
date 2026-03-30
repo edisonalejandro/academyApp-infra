@@ -1,0 +1,9 @@
+# Ignorar repos anidados de backend y frontend (tienen sus propios repos)
+backend/
+frontend/
+
+# Archivos de sistema
+.DS_Store
+
+# Variables de entorno reales — NUNCA commitear
+infra/.env
