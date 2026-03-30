@@ -1,0 +1,39 @@
+# ─── Dependencies ────────────────────────────────────────────────────────────
+node_modules/
+vendor/
+
+# ─── Build artifacts ─────────────────────────────────────────────────────────
+dist/
+build/
+*.egg-info/
+__pycache__/
+*.pyc
+
+# ─── Environment & secrets ────────────────────────────────────────────────────
+.env
+*.env.local
+*.env.*.local
+
+# ─── Terraform ───────────────────────────────────────────────────────────────
+**/.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+!*.tfvars.example
+.terraform.lock.hcl
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# ─── Docker ──────────────────────────────────────────────────────────────────
+infrastructure/docker/.env
+
+# ─── OS & editor artifacts ───────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
